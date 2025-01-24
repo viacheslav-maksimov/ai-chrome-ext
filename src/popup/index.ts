@@ -69,8 +69,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 /**
  * Generate a Mermaid Live Editor URL from Mermaid diagram code.
- * @param diagramCode The Mermaid diagram code as a string.
- * @returns The URL to edit the diagram in Mermaid Live Editor.
  */
 const generateMermaidLiveEditorUrl = (mermaidCode: string): string => {
 	const json = JSON.stringify(mermaidCode);

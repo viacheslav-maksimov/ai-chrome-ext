@@ -29,3 +29,5 @@
 secrets.*.js
 
 .vscode
+
+package-lock.json

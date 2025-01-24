@@ -8,6 +8,35 @@
   </head>
   <body>
     <div id="app"></div>
+    <body>
+    <div class="container">
+        <header>
+            <h1>Query Documents</h1>
+        </header>
+
+        <div class="input-section">
+            <label for="queryTextarea">Please explain which role you need</label>
+            <div class="input-wrapper">
+                <textarea id="queryTextarea" placeholder="Enter query"></textarea>
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+
+        <main>
+            <section>
+                <h3>Results:</h3>
+                <div id="result" class="result-list">No response yet.</div>
+            </section>
+
+            <section>
+                <h3>Quick Links:</h3>
+                <div id="links" class="links-list">No links available.</div>
+            </section>
+        </main>
+    </div>
+    </body>
+
+
     <script type="module" src="/src/sidepanel/index.ts"></script>
   </body>
 </html>

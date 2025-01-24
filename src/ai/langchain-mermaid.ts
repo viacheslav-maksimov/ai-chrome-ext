@@ -3,11 +3,13 @@ import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { loadSummarizationChain } from "langchain/chains";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 
-export async function summarizeText(text: string, apiKey: string) {
-	// retreive the API key from the Chrome storage
+export async function callAI(text: string, apiKey: string) {
 	const openai = new ChatOpenAI({
 		model: "gpt-4o-mini",
 		apiKey: apiKey,
+    // configuration: {
+    //   baseURL: "https://deloreanurl", Has been blocked by CORS policy: Request header field x-stainless-os is not allowed by Access-Control-Allow-Headers in preflight response
+    // }
 	});
 
 	const textSplitter = new RecursiveCharacterTextSplitter({
